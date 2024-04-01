@@ -20,3 +20,6 @@ Rules:
   must be lower than 10: if there are, 
   you have to set them to 0 and increment the next number in sequence.
 */
+
+
+// Solution
