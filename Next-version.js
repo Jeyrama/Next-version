@@ -38,3 +38,18 @@ function nextVersion(ver){
 }
 
 // or
+
+function nextVersion(version) {
+  const parts = version.split(".")
+
+  for (let i = parts.length - 1; i >= 0; i--) {
+    if (i > 0 && parts[i] === "9") {
+      parts[i] = 0
+    } else {
+      parts[i]++
+      break
+    }
+  }
+  
+  return parts.join(".")
+}
